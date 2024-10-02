@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    left: 0;;
+    right: 0;
+}
+
+nav ul li {
+    @apply py-3; 
+}
+
+header ul li {
+    @apply px-3;
+}
+
+.header-menu {
+    @apply border-2 border-black px-2 py-2 rounded hover:border-4 hover:bg-green-400 hover:rounded-lg hover:shadow-lg hover:shadow-cyan-600;
+}
+
+.mobile-nav {
+    @apply fixed top-16 left-0 bg-zinc-800 w-full h-64;
+}
+
+.mobile-nav li {
+    @apply w-full text-center border-b-2 h-full;
+}
+
+h1 p {
+    @apply text-5xl font-bold text-amber-600 p-2; 
+}
+
+.project-feature {
+    @apply py-3 text-2xl font-semibold absolute left-0 right-0 bottom-0 top-0 bg-black opacity-0 duration-500 hover:opacity-100;
+}
+
+.download-btn {
+    @apply bg-red-600 border-4 border-black font-bold rounded-none hover:rounded-full;    ; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.horizontal-line {
+    @apply border-t-8 border-b-8 border-slate-200 text-center py-4 bg-white text-black font-semibold text-xl;
+}
+
+.social-media {
+    @apply  text-xl font-semibold pr-5 hover:shadow-lg hover:shadow-cyan-600 text-green-500 hover:animate-bounce;
+}
